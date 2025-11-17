@@ -1,0 +1,14 @@
+# Entorno virtual
+venv/
+.env/
+
+# Archivos de sistema
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Datos procesados o pesados
+data/processed/
+modelo/*.pkl
