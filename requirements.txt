@@ -1,8 +1,7 @@
-data-processing
 pandas
 numpy
 scikit-learn
 matplotlib
 seaborn
-jupyter
 joblib
+jupyter

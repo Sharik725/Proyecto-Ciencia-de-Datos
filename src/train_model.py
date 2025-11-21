@@ -1,11 +1,10 @@
-import os
 import joblib
 from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import StandardScaler
 
-def train_model(df, model_path="../Modelo/modelo_credito.pkl"):
-    """Entrena el modelo usando regresión logística con datos estandarizados."""
+def train_model(df, save=False, model_path="../Modelo/modelo_credito.pkl"):
+    # Entrena el modelo usando regresión logística con datos estandarizados
 
     target_col = "default.payment.next.month"
 
@@ -18,27 +17,28 @@ def train_model(df, model_path="../Modelo/modelo_credito.pkl"):
         X, y, test_size=0.2, random_state=42
     )
 
-    # ⭐ Escalado de datos
+    # Escalado de datos
     scaler = StandardScaler()
     X_train_scaled = scaler.fit_transform(X_train)
     X_test_scaled = scaler.transform(X_test)
 
-    # ⭐ Modelo con más iteraciones
+    # Modelo
     model = LogisticRegression(
-        max_iter=1000,       # antes 200 → ahora 1000
-        solver="lbfgs"       # el más estable
+        max_iter=1000,
+        solver="lbfgs"
     )
 
     model.fit(X_train_scaled, y_train)
 
-    # Crear carpeta si no existe
-    os.makedirs(os.path.dirname(model_path), exist_ok=True)
+    # Guardar SOLO si el usuario lo pide
+    if save:
+        import os
+        os.makedirs(os.path.dirname(model_path), exist_ok=True)
 
-    # Guardar modelo y scaler
-    joblib.dump({
-        "model": model,
-        "scaler": scaler,
-        "columns": X.columns.tolist()
-    }, model_path)
+        joblib.dump({
+            "model": model,
+            "scaler": scaler,
+            "columns": X.columns.tolist()
+        }, model_path)
 
-    return model, X_test_scaled, y_test
+    return model, scaler, X_test_scaled, y_test
