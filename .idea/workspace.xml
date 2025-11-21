@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c7ecf8b-ab85-4863-bb78-0ea5d5527db5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Modelo/Modelo de datos.ipynb" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Notebook/Visualizacion inicial.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/Lib/site-packages/data_processing/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/Lib/site-packages/data_processing/calculate_tool.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/Lib/site-packages/data_processing/frequency.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.venv/Lib/site-packages/data_processing/to_fixed.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Notebook/analisis_exploratorio.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Notebook/analisis_exploratorio.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/data_processing.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/datas_processing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/train_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/train_model.py" afterDir="false" />
-    </list>
+    <list default="true" id="6c7ecf8b-ab85-4863-bb78-0ea5d5527db5" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
