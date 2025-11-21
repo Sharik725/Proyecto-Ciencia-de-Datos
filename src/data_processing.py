@@ -1,15 +1,23 @@
-import pandas as pd
+import os
 
-def load_data(path="Data/RAW/UCI_Credit_Card.csv"):
-    """Carga el dataset original."""
-    df = pd.read_csv(path)
-    return df
 
 def clean_data(df):
-    """Limpieza básica del dataset."""
-    df = df.dropna()  # eliminar filas con valores faltantes
+    #Limpia los datos
+    df = df.dropna()
     return df
 
+
 def save_processed(df, path="Data/Processed/clean_data.csv"):
-    """Guardar datos limpios."""
+    #Guarda el dataframe limpio en una ruta dada
+    #Crea las carpetas si no existen
+
+
+    # Crear carpeta si no existe
+    directory = os.path.dirname(path)
+    if directory != "" and not os.path.exists(directory):
+        os.makedirs(directory)
+
+    # Guardar archivo correctamente
     df.to_csv(path, index=False)
+
+
