@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6c7ecf8b-ab85-4863-bb78-0ea5d5527db5" name="Changes" comment="" />
+    <list default="true" id="6c7ecf8b-ab85-4863-bb78-0ea5d5527db5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Modelo/Modelo de datos.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Modelo/Modelo de datos.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/train_model.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/train_model.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
