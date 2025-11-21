@@ -5,7 +5,7 @@ from sklearn.linear_model import LogisticRegression
 from sklearn.preprocessing import StandardScaler
 
 def train_model(df, model_path="../Modelo/modelo_credito.pkl"):
-    """Entrena el modelo usando regresión logística con datos estandarizados."""
+    #Entrena el modelo usando regresión logística con datos estandarizados.
 
     target_col = "default.payment.next.month"
 
@@ -18,12 +18,12 @@ def train_model(df, model_path="../Modelo/modelo_credito.pkl"):
         X, y, test_size=0.2, random_state=42
     )
 
-    # ⭐ Escalado de datos
+    # Escalado de datos
     scaler = StandardScaler()
     X_train_scaled = scaler.fit_transform(X_train)
     X_test_scaled = scaler.transform(X_test)
 
-    # ⭐ Modelo con más iteraciones
+    # Modelo con más iteraciones
     model = LogisticRegression(
         max_iter=1000,       # antes 200 → ahora 1000
         solver="lbfgs"       # el más estable
