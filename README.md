@@ -96,7 +96,7 @@ _**ANALISIS Y RESULTADOS**_
 Se visualizara junto con POWERBI el analisis y los resultados obtenidos
 
 _**CONCLUSIONES**_
-1. 
-
-
+1. La limpieza y el preprocesamiento del dataset nos garantizan la calidad de los datos que utilizamos, ya que permite corregir inconsistencias, outliers y variables que no aportan información. Este proceso fue clave para incrementar la precisión de los modelos y también para asegurar que los resultados obtenidos sean fiables.
+2. El análisis exploratorio de datos (EDA) nos permitió identificar patrones clave que se encuentran correlacionados con default, tales como el historial de pagos, los montos de las facturas y el comportamiento en el proceso de endeudamiento. Este análisis nos permitió hacer un matrix de correlaciones haciendo de soporte para seleccionar las variables que más relevancia poseen en el contexto de los modelos predictivos.
+3. Los modelos de clasificación se han utilizado para predecir de forma adecuada el default mostrando así los beneficios del machine learning en la gestión del riesgo crediticio. Técnicas como la regresión logística, los decision trees y el random forest muestran desempeños adecuados a este tipo de problema.
 
